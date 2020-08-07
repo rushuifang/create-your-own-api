@@ -27,6 +27,7 @@ router.route("/api/v1/stats/:id").get(getStats);
 
 module.exports = router;
 
+const statsFilePath = path.join(__dirname, "./stats.json");
 //POST Method
 const createStats = async (req, res, next) => {
     try {
